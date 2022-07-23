@@ -1,0 +1,16 @@
+plugins {
+	id("qsl.module")
+}
+
+qslModule {
+	name = "Quilt Transfer API"
+	moduleName = "transfer"
+	id = "quilt_transfer"
+	description = "An API for allowing different mods to transfer materials with them."
+	library = "transfer"
+	moduleDependencies {
+		core {
+			api("qsl_base")
+		}
+	}
+}
