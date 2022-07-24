@@ -10,7 +10,12 @@ qslModule {
 	library = "transfer"
 	moduleDependencies {
 		core {
-			api("qsl_base")
+			testmodOnly("resource_loader")
 		}
 	}
+	noMixins()
+}
+
+loom {
+	accessWidenerPath = file("src/testmod/resources/quilt_transfer.accesswidener")
 }

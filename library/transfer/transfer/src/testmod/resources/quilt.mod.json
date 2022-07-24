@@ -17,5 +17,7 @@
       "quilt_loader",
       "quilt_transfer"
     ]
-  }
+  },
+  "mixin": "quilt_transfer_testmod.mixins.json",
+  "access_widener": "quilt_transfer.accesswidener"
 }
